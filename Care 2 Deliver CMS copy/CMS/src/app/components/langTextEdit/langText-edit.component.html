@@ -1,0 +1,35 @@
+<article>
+
+
+<div *ngIf="SelectedCat">
+  <h2>Teksten voor {{SelectedCat.name}}</h2>
+
+</div>
+<section class="tabcontainer" *ngIf="langs">
+  <div *ngFor="let lang of langs">
+    <div class="tab" (click)="langSelected(lang)" [ngClass]="{'selected': lang === SelectedLang }">
+      {{lang.langName}}
+    </div>
+  </div>
+</section>
+<section class="editorContainer" *ngIf="SelectedLangText">
+  <label class="spacebelow">Titel</label>
+  <input [(ngModel)]="titleContent" placeholder="titel" type="text" />
+  <label>Text</label>
+  <ckeditor
+      [(ngModel)]="ckeditorContent"
+      [config]=""
+      (change)="onChange($event)"
+      (ready)="onReady($event)"
+      (focus)="onFocus($event)"
+      (blur)="onBlur($event)"
+      debounce="500">
+    </ckeditor>
+
+</section>
+<div *ngIf="!SelectedLangText" class="centerContent">
+  <span  class="Instruction">Selecteer een taal hierboven</span>
+</div>
+
+<div *ngIf="SelectedLangText" (click)="saveLangTexts($event)" class="btn"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</div>
+</article>

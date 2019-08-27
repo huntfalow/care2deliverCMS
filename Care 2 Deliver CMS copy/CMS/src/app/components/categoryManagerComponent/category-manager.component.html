@@ -1,0 +1,9 @@
+<section>
+<nav>
+  <div *ngFor="let headCat of HeadCategories" (click)="clickHandler(headCat)" [ngClass]="{'active': headCat===SelectedHeadCategory }">
+    {{headCat.name}}
+  </div>
+</nav>
+<category-List [headCategory]="SelectedHeadCategory"></category-List>
+
+</section>

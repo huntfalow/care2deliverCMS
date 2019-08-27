@@ -1,0 +1,713 @@
+{
+    "data": [
+
+        {
+            "ApiUrl": "/api/dynamicFormsApi.php",
+            "Title": "Home pagina editor",
+            "Identity": "homeIdentity",
+            "GeneratedSections": [
+                {
+                    "Title": "Header",
+                    "Size": "half",
+                    "ValueKeys": [
+
+                        {
+                            "Key": "slogan",
+                            "ContentType": "string",
+                            "Label": "Slogan",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "headerButton",
+                            "ContentType": "string",
+                            "Label": "knop tekst",
+                            "Value": ""
+                        }
+                    ]
+                },
+                {
+                    "Title": "Banner",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "stad",
+                            "ContentType": "string",
+                            "Label": "Stad",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "telefoon",
+                            "ContentType": "string",
+                            "Label": "Telefoon",
+                            "Value": ""
+                        }
+                        ,
+                        {
+                            "Key": "email",
+                            "ContentType": "string",
+                            "Label": "Email",
+                            "Value": ""
+                        }
+                        ,
+                        {
+                            "Key": "reserveerButton",
+                            "ContentType": "string",
+                            "Label": "reserveer knop tekst",
+                            "Value": ""
+                        }
+                    ]
+                },
+                {
+                    "Title": "Aanbod",
+                    "Size": "full",
+                    "ValueKeys": [
+                        {
+                            "Key": "aanbodTitel",
+                            "ContentType": "string",
+                            "Label": "Titel",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "luchthavenvervoerTitel",
+                            "ContentType": "string",
+                            "Label": "Luchthavenvervoer Titel",
+                            "Value": ""
+                        }
+                        ,
+                        {
+                            "Key": "luchthavenTekst",
+                            "ContentType": "html",
+                            "Label": "LuchthavenTekst",
+                            "Value": ""
+                        }
+                        ,
+                        {
+                            "Key": "luchthavenCalculatorButton",
+                            "ContentType": "string",
+                            "Label": "Luchthaven calculator knop",
+                            "Value": ""
+                        }
+                         ,
+                        {
+                            "Key": "luchthavenMeerInfoButton",
+                            "ContentType": "string",
+                            "Label": "Luchthaven meer info knop",
+                            "Value": ""
+                        }
+                         ,
+                        {
+                            "Key": "personenvervoerTitel",
+                            "ContentType": "string",
+                            "Label": "Personenvervoer Titel",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "personenvervoerTekst",
+                            "ContentType": "html",
+                            "Label": "Personenvervoer Tekst",
+                            "Value": ""
+                        }
+
+
+
+                    ]
+                },
+                {
+                    "Title": "Visie",
+                    "Size": "full",
+                    "ValueKeys": [
+                        {
+                            "Key": "visieTitel",
+                            "ContentType": "string",
+                            "Label": "Titel",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "visieTekst",
+                            "ContentType": "html",
+                            "Label": "Tekst",
+                            "Value": ""
+                        }
+
+
+                    ]
+                }
+            ]
+        },
+        {
+            "ApiUrl": "/api/dynamicFormsApi.php",
+            "Title": "Header editor",
+            "Identity": "headerIdentity",
+            "GeneratedSections": [
+                {
+                    "Title": "header",
+                    "Size": "full",
+                    "ValueKeys": [
+                        {
+                            "Key": "indexLink",
+                            "ContentType": "string",
+                            "Label": "index link label",
+                            "Value": ""
+                        },
+                         {
+                            "Key": "luchthavenVervoerLink",
+                            "ContentType": "string",
+                            "Label": "luchthavenVervoer link label",
+                            "Value": ""
+                        },
+                         {
+                            "Key": "personenVervoerLink",
+                            "ContentType": "string",
+                            "Label": "personenVervoer link label",
+                            "Value": ""
+                        },
+                         {
+                            "Key": "autoLink",
+                            "ContentType": "string",
+                            "Label": "auto link label",
+                            "Value": ""
+                        },
+                         {
+                            "Key": "contactLink",
+                            "ContentType": "string",
+                            "Label": "contact link label",
+                            "Value": ""
+                        }
+                    ]
+                }
+            ]
+        },
+           {
+            "ApiUrl": "/api/dynamicFormsApi.php",
+            "Title": "Footer editor",
+            "Identity": "footerIdentity",
+            "GeneratedSections": [
+                {
+                    "Title": "Home pagina links",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "rootIndex",
+                            "ContentType": "string",
+                            "Label": "home label",
+                            "Value": ""
+                        },
+                          {
+                            "Key": "aanbodlink",
+                            "ContentType": "string",
+                            "Label": "aanbod",
+                            "Value": ""
+                        }
+                        ,
+                          {
+                            "Key": "visieLink",
+                            "ContentType": "string",
+                            "Label": "onze visie",
+                            "Value": ""
+                        }
+                    ]
+                },
+                   {
+                    "Title": "Luchthavenvervoer links",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "rootLuchthavenvervoer",
+                            "ContentType": "string",
+                            "Label": "luchthavenvervoer",
+                            "Value": ""
+                        },
+                         {
+                            "Key": "prijsCalculatorLink",
+                            "ContentType": "string",
+                            "Label": "Prijscalculator",
+                            "Value": ""
+                        }
+                    ]
+                },
+                   {
+                    "Title": "Personenvervoer links",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "rootPersonenvervoor",
+                            "ContentType": "string",
+                            "Label": "Personenvervoer",
+                            "Value": ""
+                        }
+                    ]
+                },
+                   {
+                    "Title": "Wagen links",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "rootWagen",
+                            "ContentType": "string",
+                            "Label": "wagen",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "skodalink",
+                            "ContentType": "string",
+                            "Label": "skoda",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "luxueuslink",
+                            "ContentType": "string",
+                            "Label": "luxueus",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "comfortlink",
+                            "ContentType": "string",
+                            "Label": "comfort",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "veiligheidlink",
+                            "ContentType": "string",
+                            "Label": "veiligheid",
+                            "Value": ""
+                        }
+                    ]
+                },
+                   {
+                    "Title": "Contact links",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "rootContact",
+                            "ContentType": "string",
+                            "Label": "Contact",
+                            "Value": ""
+                        }
+                    ]
+                },
+                 {
+                    "Title": "Ontwikkeld door",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "devby",
+                            "ContentType": "string",
+                            "Label": "Ontwikkeld door",
+                            "Value": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ApiUrl": "/api/dynamicFormsApi.php",
+            "Title": "Luchthaven editor",
+            "Identity": "luchthavenIdentity",
+            "GeneratedSections": [
+                {
+                    "Title": "Header",
+                    "Size": "full",
+                    "ValueKeys": [
+                        {
+                            "Key": "lucthavenTitel",
+                            "ContentType": "string",
+                            "Label": "Titel",
+                            "Value": ""
+                        }
+                    ]
+                },
+                {
+                    "Title": "Boven calculator",
+                    "Size": "full",
+                    "ValueKeys": [
+
+                        {
+                            "Key": "luchthavenBovenTekst",
+                            "ContentType": "html",
+                            "Label": "tekst",
+                            "Value": ""
+                        }
+                    ]
+                },
+                {
+                    "Title": "Prijscalculator",
+                    "Size": "full",
+                    "ValueKeys": [
+
+                        {
+                            "Key": "prijsCalculatorTitel",
+                            "ContentType": "string",
+                            "Label": "Titel",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "prijsCalculatorLuchthavenSelect",
+                            "ContentType": "string",
+                            "Label": "selecteer luchthaven label",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "prijsCalculatorLuchthavenSelectPlaceholder",
+                            "ContentType": "string",
+                            "Label": "selecteer luchthaven placeholder",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "prijsCalculatorGemeenteSelect",
+                            "ContentType": "string",
+                            "Label": "selecteer gemeente label",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "prijsCalculatorGemeenteSelectPlaceholder",
+                            "ContentType": "string",
+                            "Label": "selecteer gemeente placeholder",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "prijsLabel",
+                            "ContentType": "string",
+                            "Label": "prijs label",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "prijsBericht",
+                            "ContentType": "string",
+                            "Label": "Bericht niks geselecteerd",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "reserveerKnop",
+                            "ContentType": "string",
+                            "Label": "tekst reserveer knop",
+                            "Value": ""
+                        }
+                    ]
+                },
+                {
+                    "Title": "Onder Calculator",
+                    "Size": "full",
+                    "ValueKeys": [
+
+                        {
+                            "Key": "luchthavenOnderTeksts",
+                            "ContentType": "html",
+                            "Label": "tekst",
+                            "Value": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ApiUrl": "/api/dynamicFormsApi.php",
+            "Title": "Personenvervoer editor",
+            "Identity": "personenIdentity",
+            "GeneratedSections": [
+                {
+                    "Title": "header",
+                    "Size": "full",
+                    "ValueKeys": [
+                        {
+                            "Key": "personenTitel",
+                            "ContentType": "string",
+                            "Label": "Titel",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "personenInleiding",
+                            "ContentType": "html",
+                            "Label": "Inleiding",
+                            "Value": ""
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "ApiUrl": "/api/dynamicFormsApi.php",
+            "Title": "Wagen editor",
+            "Identity": "wagenIdentity",
+            "GeneratedSections": [
+                {
+                    "Title": "Wagentitel",
+                    "Size": "full",
+                    "ValueKeys": [
+                        {
+                            "Key": "wagenTitel",
+                            "ContentType": "string",
+                            "Label": "Titel",
+                            "Value": ""
+                        }
+
+                    ]
+                },
+                {
+                    "Title": "Skoda",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "skodaTitel",
+                            "ContentType": "string",
+                            "Label": "Skoda titel",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "skodaTeksts",
+                            "ContentType": "html",
+                            "Label": "Skoda teksts",
+                            "Value": ""
+                        }
+
+                    ]
+
+
+
+                },
+                {
+                    "Title": "Luxueus",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "luxueusTitel",
+                            "ContentType": "string",
+                            "Label": "luxueus titel",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "luxueusTekst",
+                            "ContentType": "html",
+                            "Label": "luxueus tekst",
+                            "Value": ""
+                        }
+
+                    ]
+
+
+
+                },
+                {
+                    "Title": "Comfortabel",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "comfortabelTitel",
+                            "ContentType": "string",
+                            "Label": "comfortabel titel",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "comfortabelTekst",
+                            "ContentType": "html",
+                            "Label": "comfortabel tekst",
+                            "Value": ""
+                        }
+
+                    ]
+
+
+
+                },
+                {
+                    "Title": "Veiligheid",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "veiligheidTitel",
+                            "ContentType": "string",
+                            "Label": "veiligheid titel",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "veiligheidTekst",
+                            "ContentType": "html",
+                            "Label": "veiligheid tekst",
+                            "Value": ""
+                        }
+
+                    ]
+
+
+
+                }
+
+            ]
+        },
+          {
+            "ApiUrl": "/api/dynamicFormsApi.php",
+            "Title": "Contact editor",
+            "Identity": "contactIdentity",
+            "GeneratedSections": [
+                {
+                    "Title": "Titel",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "contactTitel",
+                            "ContentType": "string",
+                            "Label": "Titel",
+                            "Value": ""
+                        }
+                    ]
+                },
+                 {
+                    "Title": "Iconen",
+                    "Size": "half",
+                    "ValueKeys": [
+                        {
+                            "Key": "mailIconTekst",
+                            "ContentType": "string",
+                            "Label": "mail icon label",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "phoneIconTekst",
+                            "ContentType": "string",
+                            "Label": "phone icon label",
+                            "Value": ""
+                        }
+                    ]
+                },
+                {
+                    "Title": "Contactformulier",
+                    "Size": "full",
+                    "ValueKeys": [
+                        {
+                            "Key": "naamLabel",
+                            "ContentType": "string",
+                            "Label": "naam label",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "naamPlaceholder",
+                            "ContentType": "string",
+                            "Label": "naam placeholder",
+                            "Value": ""
+                        },
+                         {
+                            "Key": "emailLabel",
+                            "ContentType": "string",
+                            "Label": "email label",
+                            "Value": ""
+                        },
+                         {
+                            "Key": "emailPlaceholder",
+                            "ContentType": "string",
+                            "Label": "email placeholder",
+                            "Value": ""
+                        },
+                         {
+                            "Key": "bedrijfLabel",
+                            "ContentType": "string",
+                            "Label": "bedrijf label",
+                            "Value": ""
+                        },
+                         {
+                            "Key": "bedrijfPlaceholder",
+                            "ContentType": "string",
+                            "Label": "Bedrijf placeholder",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "telefoonLabel",
+                            "ContentType": "string",
+                            "Label": "telefoon label",
+                            "Value": ""
+                        },
+                                                {
+                            "Key": "telefoonPlaceholder",
+                            "ContentType": "string",
+                            "Label": "telefoon placeholder",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "typeLabel",
+                            "ContentType": "string",
+                            "Label": "type label",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "typePlaceholder",
+                            "ContentType": "string",
+                            "Label": "type placeholder",
+                            "Value": ""
+                        },
+                        {
+                            "Key": "informatie",
+                            "ContentType": "string",
+                            "Label": "informatie in select box",
+                            "Value": ""
+                        }
+                        ,
+                        {
+                            "Key": "reservatie",
+                            "ContentType": "string",
+                            "Label": "reservatie in select box",
+                            "Value": ""
+                        }
+                        ,
+                        {
+                            "Key": "berichtLabel",
+                            "ContentType": "string",
+                            "Label": "bericht label",
+                            "Value": ""
+                        }
+                        ,
+                        {
+                            "Key": "verzendKnop",
+                            "ContentType": "string",
+                            "Label": "verzend knop",
+                            "Value": ""
+                        } ,
+                        {
+                            "Key": "defaultMessage",
+                            "ContentType": "html",
+                            "Label": "standaard bericht na klik reservatie op calculator",
+                            "Value": ""
+                        }
+                
+                    ]
+                    
+                },
+                  {
+                    "Title": "Verzonden bericht boodschap",
+                    "Size": "full",
+                    "ValueKeys": [
+                        {
+                            "Key": "titelBoodschapSend",
+                            "ContentType": "string",
+                            "Label": "titel",
+                            "Value": ""
+                        },
+                          {
+                            "Key": "secundaireTekstBoodschapSend",
+                            "ContentType": "string",
+                            "Label": "secundaire tekst",
+                            "Value": ""
+                        }
+                    ]
+                },
+                  {
+                    "Title": "Telefoon info",
+                    "Size": "full",
+                    "ValueKeys": [
+                        {
+                            "Key": "telefoonTitel",
+                            "ContentType": "string",
+                            "Label": "titel",
+                            "Value": ""
+                        },
+                          {
+                            "Key": "telefoonTekst",
+                            "ContentType": "html",
+                            "Label": "tekst",
+                            "Value": ""
+                        }
+                    ]
+                }
+            ]
+        }
+
+    ]
+}

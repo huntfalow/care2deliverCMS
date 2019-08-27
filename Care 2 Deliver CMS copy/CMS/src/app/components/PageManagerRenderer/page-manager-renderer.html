@@ -1,0 +1,34 @@
+
+<section [ngClass]="{'show': showSave}" class="savedBar">Teksten zijn succesvol opgeslaan.</section>
+<div [ngClass]="{'enable': showSave}" class="extraSpace"></div>
+<section class="tabcontainer" *ngIf="langs">
+  <div *ngFor="let lang of langs">
+    <div class="tab" (click)="langSelected(lang)" [ngClass]="{'selected': lang === SelectedLang }">
+      {{lang.langName}}
+    </div>
+  </div>
+</section>
+<article *ngFor="let lpl of langPageLayouts">
+
+    <div *ngIf="lpl.LangId===SelectedLang.id">
+    <h1>{{lpl.PageLayout.Title}}</h1>
+    <section *ngFor="let generatedSection of lpl.PageLayout.GeneratedSections" [ngClass]="{'halfSize': generatedSection.Size=='half'}" class="input_label">
+        <h2>{{generatedSection.Title}}</h2>
+        <div *ngFor="let valueKey of generatedSection.ValueKeys">
+                <label>{{valueKey.Label}}</label>
+                <input *ngIf="valueKey.ContentType=='string'" type="text"   placeholder="{{valueKey.Label}}" [(ngModel)]="valueKey.Value" />
+                <input *ngIf="valueKey.ContentType=='number'" type="number"  placeholder="{{valueKey.Label}}" [(ngModel)]="valueKey.Value" />         
+                <div *ngIf="valueKey.ContentType=='html'" class="ckcontainer">
+                <ckeditor 
+                    [(ngModel)]="valueKey.Value"
+                    [config]=""
+                    debounce="500">
+                </ckeditor>
+            </div>
+            <textarea *ngIf="valueKey.ContentType=='text'" [(ngModel)]="valueKey.Value"  placeholder="{{valueKey.Label}}"></textarea>
+        </div>
+    </section>
+    </div>
+</article>
+<div class="saveBtn" (click)="save()"><i class="fa fa-floppy-o" aria-hidden="true"></i></div>
+

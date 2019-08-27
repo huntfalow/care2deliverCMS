@@ -1,0 +1,28 @@
+<section>
+    <div>
+           <div  class="extraPaddingForNav" >
+            <h2>Language manager</h2>
+            <section>
+                <article *ngFor="let language of Languages">
+                    <div>
+
+                        <span><span class="spanbreedte" >{{language.langName}}</span></span> 
+                        <span><span>{{language.tag}}</span></span>
+                        <div class="btnGrouper">
+                              <a class="btn" [routerLink]="[editLanguagePath , language.id]">Taal aanpassen</a>
+                               <a class="btn" (click)=deleteLang(language)>Verwijderen</a>
+                               <span *ngIf="boolloaded">
+                                 <input type="radio" name="default" value="other" (click)="handleClick(language.id)" [checked]="language.defaultLang" > Default
+                               </span>
+                        </div>
+                        
+                    </div>
+                </article>
+                 <a class="btn toevoegen" [routerLink]="[addPath]">Toevoegen</a>
+            </section>
+
+        </div>
+
+    </div>
+</section>
+

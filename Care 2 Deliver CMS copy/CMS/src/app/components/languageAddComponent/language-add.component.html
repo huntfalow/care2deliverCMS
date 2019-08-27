@@ -1,0 +1,18 @@
+<section>
+  <h2>Add Language</h2>
+  <article>
+     <div>
+      <label for="NewLanguageName">New Language Name</label>
+        <input type="text" [(ngModel)]="LanguageName" id="NewLanguageName" />
+    </div>
+       <div>
+      <label for="NewTagName">New Tag Name</label>
+        <input type="text" [(ngModel)]="LanguageTagName" id="NewTagName" />
+    </div>
+    <div>
+          <button (click)="goBack()" class="btn">back</button>
+      <button (click)="submitForm()" class="btn">toevoegen</button>
+    </div>
+ 
+  </article>
+</section>

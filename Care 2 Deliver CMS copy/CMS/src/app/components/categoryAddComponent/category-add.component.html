@@ -1,0 +1,34 @@
+<section>
+  <h2>Add Category</h2>
+  <article>
+    <div>
+            <label for="HeadCategorySelectBox">Hoofdcategorie</label>
+        <select [(ngModel)]="SelectedCategoryNumber" id="HeadCategorySelectBox" >
+          <option *ngFor="let hc of HeadCategories" value={{hc.id}}>
+            {{hc.name}}
+          </option>
+        </select>
+
+    </div>
+    <div>
+      <label for="NewCategoryName">New category Name</label>
+        <input type="text" [(ngModel)]="CategoryName" id="NewCategoryName" />
+    </div>
+    <div>
+      <label for="NewFaName">Icon name</label>
+        <input type="text" [(ngModel)]="FaName" id="NewFaName" />
+        <span>Bekijk de namen van alle mogelijke icons <a href="http://fontawesome.io/icons/" target="_blank">hier</a>.</span>
+    </div>
+    <div>
+      <label for="iconPreview">Icon preview</label>
+      <i class="fa {{FaName}} fa-5x" aria-hidden="true" id="iconPreview"></i>
+    </div>
+    <div>
+      <button (click)="submitForm()" class="btn">toevoegen</button>
+    </div>
+    <p class="errorMessage" *ngFor="let errorMessage of errorMessages">
+      {{errorMessage}}
+    </p>
+
+  </article>
+</section>

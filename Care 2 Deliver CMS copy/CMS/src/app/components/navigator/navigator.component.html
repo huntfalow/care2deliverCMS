@@ -1,0 +1,6 @@
+<header>
+    <nav>
+        <a *ngFor="let link of links" [routerLink]="[link.path]" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+true}"><span>{{link.label}}</span></a>
+    </nav>
+</header>

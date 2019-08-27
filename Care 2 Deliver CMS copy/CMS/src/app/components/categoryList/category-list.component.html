@@ -1,0 +1,26 @@
+<section>
+    <div>
+        <div *ngIf="headCategory === undefined" class="centerContent" class="extraPaddingForNav" >
+            <span class="Instruction"> Selecteer eerst een subcategory hierboven. </span>
+
+        </div>
+        <div *ngIf="headCategory != undefined" class="extraPaddingForNav" >
+            <h2>{{headCategory.name}} manager</h2>
+            <section>
+                <article *ngFor="let category of Categories">
+                    <div *ngIf="headCategory.id===category.headCategoryId">
+
+                        <span><i class="fa {{category.faName}} fa-2x" aria-hidden="true"></i><span>{{category.name}}</span></span>
+                        <div class="btnGrouper">
+                            <a class="btn" [routerLink]="[editCategoryPath , category.id]">Category aanpassen</a>
+                            <a class="btn" [routerLink]="[editTextPath , category.id]">Teksten aanpassen</a>
+                            <a class="btn" (click)=deleteCat(category)>Verwijderen</a>
+                        </div>
+                    </div>
+                </article>
+                <a class="btn toevoegen" [routerLink]="[addPath , headCategory.id]">toevoegen</a>
+            </section>
+        </div>
+
+    </div>
+</section>

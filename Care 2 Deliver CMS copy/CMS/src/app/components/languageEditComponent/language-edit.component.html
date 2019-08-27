@@ -1,0 +1,22 @@
+<section>
+  <h2>Edit Language</h2>
+  <article *ngIf="Language">
+    <div>
+      <label for="NewLanguageName">Language Name</label>
+        <input type="text" [(ngModel)]="Language.langName" id="NewLanguageyName" />
+    </div>
+    <div>
+       <label for="NewTagName">Tag Name</label>
+        <input type="text" [(ngModel)]="Language.tag" id="NewTagName" />
+    </div>
+
+    <div>
+      <button (click)="submitForm()" class="btn">aanpassen</button>
+    </div>
+    <p class="errorMessage" *ngFor="let errorMessage of errorMessages">
+      {{errorMessage}}
+    </p>
+
+  </article>
+</section>
+

@@ -1,0 +1,30 @@
+mappen aanmaken :
+-app
+-config
+-public
+-src
+bestanden aanmaken:
+-app.js
+
+npm init in map
+
+in package.json:
+-volgende code toevoegen aan "dependencies":{}
+        "@angular/common": "~2.4.0",
+        "@angular/compiler": "~2.4.0",
+        "@angular/core": "~2.4.0",
+        "@angular/forms": "~2.4.0",
+        "@angular/http": "~2.4.0",
+        "@angular/platform-browser": "~2.4.0",
+        "@angular/platform-browser-dynamic": "~2.4.0",
+        "@angular/router": "~3.4.0",
+
+        "ng2-translate": "~5.0.0",
+
+        "rxjs": "~5.0.3",
+
+        "zone.js": "0.7.6"
+
+in cmd:
+nmp install
+
